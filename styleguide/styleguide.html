@@ -21,34 +21,37 @@
     <link href="css/media.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="scripts.js"></script>
+    <ul class="head-list">
+      <img src="img/logo.png" alt="logo" width="150" height="150"/></li>
+    </ul>
+    <nav>
+      <topnav>
+          <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+          <div class="topnav" id="myTopnav">
+              <a href="#about" class="active">Home</a>
+              <a href="#styling">Styling</a>
+              <a href="#interactive_elements">Elements</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+              </a>
+          </div>
+      </topnav>
+      <script>
+          function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                  x.className += " responsive";
+              } else {
+                  x.className = "topnav";
+              }
+          }
+      </script>
+    </nav>
   </header>
 
   <body>
     <main>
-      <nav>
-        <topnav>
-            <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
-            <div class="topnav" id="myTopnav">
-                <a href="#about" class="active">Home</a>
-                <a href="#styling">Styling</a>
-                <a href="#interactive_elements">Elements</a>
-                <a href="#inspo">Inspirations</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </topnav>
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
-    </nav>
+     
       <section id="about">
         <h2>About myself</h2>
         <section class="element about-element">
@@ -103,7 +106,7 @@
             </li>
           </ul>
         </section>
-        <h2>Project Analysis #2</h2>
+        <h2>Movie Poster Project Analysis #2</h2>
         <section class="element about-element">
           <ul>
             <li>
@@ -288,33 +291,11 @@
             <section id="image-link" class="element">
                 <h3>Image as a Link</h3>
                 <div class="image-link">
-                    <a class="product_image zoom" href="#image-link"><img src="img/logo_with_name.png" alt="logo"></a>
+                    <a class="product_image zoom" href="#image-link"><img src="img/logo.png" alt="logo"></a>
                     <code>&lt;a href = "#"&gt;&lt;img src = "img/logo.png" alt = "logo"&gt;&lt;/a&gt;</code>
                 </div>
             </section>
         </section>
 
-        <section id="inspo">
-            <section class="element">
-              <h2>Inspirations</h2>
-    
-              <div class="image-flexbox-container">
-                <div class="image-flexbox-container-sm">
-                  <a class="image-flexbox-item image-flexbox-item-1" href="#"
-                    ><img src="img/potential-image-1.png" alt="potential-image-1"
-                  /></a>
-                  <a class="image-flexbox-item image-flexbox-item-3" href="#"
-                    ><img src="img/potential-image-3.png" alt="potential-image-3"
-                  /></a>
-                </div>
-    
-                <div class="image-flexbox-container-md">
-                  <a class="image-flexbox-item image-flexbox-item-2" href="#"
-                    ><img src="img/potential-image-2.png" alt="potential-image-2"
-                  /></a>
-                </div>
-              </div>
-            </section>
-          </section>
   </body>
 </html>
