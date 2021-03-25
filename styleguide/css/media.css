@@ -27,24 +27,6 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .product-listing-column-1 {
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-  }
-  .product-listing-container {
-    margin-top: 0;
-    padding-top: 0;
-    justify-content: space-evenly;
-  }
-  .product-listing-column-2 {
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-  }
-}
-
 @media (min-width: 800px) {
   body {
     display: flex;
@@ -53,9 +35,6 @@
   main {
     padding-left: 0;
     padding-right: 0;
-  }
-  .product-listing-column-1 {
-    margin-left: 2rem;
   }
   .head-list {
     justify-content: center;
