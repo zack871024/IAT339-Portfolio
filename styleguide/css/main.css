@@ -54,7 +54,7 @@ nav a:focus {
   justify-content: center;
   overflow: auto;
   margin-top: 5em;
-  background-color: #c3996b;
+  background-color: #086788;
 }
 
 .topnav a {
@@ -98,7 +98,7 @@ nav a:focus {
 
 .topnav a:hover,
 .dropdown:hover .dropbtn {
-  background-color: #51301d;
+  background-color: #ccdbdc;
 }
 
 .dropdown-content {
@@ -632,8 +632,10 @@ POTENTIAL IMAGERIES---------------------
 }
 
 .image-flexbox-container-md {
-  width: 25%;
-  height: 100%;
+  display: flexbox;
+  flex-direction: row;
+  width: 200%;
+  height: 200%;
 }
 
 .image-flexbox-container-sm a img {
