@@ -19,40 +19,40 @@
     />
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="scripts.js"></script>
   </header>
 
-  <nav>
-    <div class="sidenav">
-      <a href="#about">About</a>
-      <a href="#styling">Styling</a>
-      <a href="#interactive_elements">Elements</a>
-      <a href="#combined_elements">Combined Elements</a>
-      <a href="#inspo">Inspirations</a>
-    </div>
-  </nav>
+    <nav>
+        <topnav>
+            <!--https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+            <div class="topnav" id="myTopnav">
+                <a href="#about" class="active">Home</a>
+                <a href="#styling">Styling</a>
+                <a href="#interactive_elements">Elements</a>
+                <a href="#inspo">Inspirations</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </topnav>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </nav>
+
 
   <body>
-    <top_nav>
-      <div class="topnav">
-        <div class="dropdown">
-          <button class="dropbtn">
-            Select
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#about">About</a>
-            <a href="#styling">Styling</a>
-            <a href="#interactive_elements">Elements</a>
-            <a href="#combined_elements">Combined Elements</a>
-            <a href="#inspo">Inspirations</a>
-          </div>
-        </div>
-      </div>
-    </top_nav>
     <main>
       <section id="about">
-        <h2>About the myself</h2>
+        <h2>About myself</h2>
         <section class="element about-element">
           <ul>
             <li>
@@ -208,9 +208,9 @@
             </section>
         </section>
 
-        <section id="potential_images">
+        <section id="inspo">
             <section class="element">
-              <h2>Potential Imageries</h2>
+              <h2>Inspirations</h2>
     
               <div class="image-flexbox-container">
                 <div class="image-flexbox-container-sm">
