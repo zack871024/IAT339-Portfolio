@@ -410,9 +410,61 @@ li {
 /*End timeline*/
 
 /*Start contact*/
+
+.contact {
+  background-color: #221e3f;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1.5rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border: none;
+  border: none;
+  outline-color: #fd57bf;
+}
+
+input[type="submit"] {
+  width: initial;
+  background-color: #fd57bf;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 650ms;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffe838;
+  color: #221e3f;
+}
+
 /*End contact*/
 
 /*Start footer*/
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  background-color: #16162d;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.up {
+  position: absolute;
+}
 /*End footer*/
 
 /*Start animations*/
