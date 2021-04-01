@@ -14,7 +14,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: rgb(59, 11, 99);
+  background: rgb(34, 34, 34);
   background-size: cover;
 }
 
@@ -106,7 +106,7 @@ header {
   position: fixed;
   top: -100vh;
   z-index: 50;
-  background-color: #16162d;
+  background-color: #373746;
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
@@ -133,7 +133,7 @@ li {
 
 .nav-link:hover,
 .nav-link:focus {
-  background: #086788;
+  background: #ff9f0e;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -162,7 +162,7 @@ li {
 }
 
 .bar {
-  background-color: #086788;
+  background-color: #ff9f0e;
   width: 100%;
   height: 4px;
   border-radius: 0.8rem;
@@ -204,7 +204,7 @@ li {
 .landing-text h1 {
   font-size: 20rem;
   font-family: "Montserrat", sans-serif;
-  background: #fed766;
+  background: #ff9f0e;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 1rem;
@@ -302,7 +302,7 @@ li {
 }
 
 .icon-container i {
-  color: yellow;
+  color: #ff9f0e;
   font-size: 5rem;
   margin: auto;
   transform: rotate(-45deg);
@@ -348,12 +348,12 @@ li {
   margin-top: 2.5rem;
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #4262b2;
+  color: #ff9f0e;
   transition: color 650ms;
 }
 
 .portfolio-description .cta:hover {
-  color: #5082ff;
+  color: #2d66e0;
 }
 /*End portfolio*/
 
@@ -412,7 +412,7 @@ li {
 /*Start contact*/
 
 .contact {
-  background-color: #221e3f;
+  background-color: rgb(34, 34, 34);
 }
 
 form {
@@ -487,7 +487,7 @@ input[type="submit"]:hover {
 /*Start media queries*/
 @media screen and (max-width: 768px) {
   body {
-    background: rgb(59, 11, 99);
+    background: rgb(34, 34, 34);
     background-size: cover;
   }
 
