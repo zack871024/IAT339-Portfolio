@@ -76,13 +76,6 @@ img {
   border-radius: 0.8rem;
 }
 
-.section-heading h1::after {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 100%;
-  bottom: -1rem;
-}
-
 .seection-heading h6 {
   font-size: 1.6rem;
   font-weight: 300;
@@ -360,7 +353,7 @@ li {
 /*Start timeline*/
 
 .timeline ul {
-  border-left: 4px solid yellow;
+  border-left: 4px solid #ff9f0e;
   background-color: rgba(0, 0, 0, 0.05);
   margin: 0 auto;
   position: relative;
@@ -432,12 +425,11 @@ textarea {
   margin-bottom: 5px;
   border: none;
   border: none;
-  outline-color: #fd57bf;
 }
 
 input[type="submit"] {
   width: initial;
-  background-color: #fd57bf;
+  background-color: #ff9f0e;
   color: white;
   padding: 1rem 2rem;
   border-radius: 0.8rem;
@@ -446,7 +438,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #ffe838;
+  background-color: #ff9f0e;
   color: #221e3f;
 }
 
@@ -457,7 +449,7 @@ input[type="submit"]:hover {
 .copyright {
   width: 100%;
   text-align: center;
-  background-color: #16162d;
+  background-color: rgb(41, 41, 41);
   padding: 2rem 0;
   position: relative;
 }
