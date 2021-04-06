@@ -244,11 +244,28 @@ li {
   margin-bottom: 5rem;
 }
 
+.project-detail-heading-cover {
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+}
+
 .project-detail-heading {
   text-align: left;
   text-transform: uppercase;
   line-height: 0;
   margin-bottom: 6rem;
+}
+
+.project-detail-heading-analysis h1 {
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 1rem;
+  font-size: 4rem;
 }
 
 .project-detail-heading h1 {
@@ -281,6 +298,18 @@ li {
 }
 
 .project-description h6 {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.project-reflection-heading h1 {
+  font-size: 4rem;
+  opacity: 0.5;
+  margin-top: 5rem;
+  text-transform: uppercase;
+}
+
+.project-reflection h6 {
   font-size: 1.7rem;
   font-weight: 300;
 }
