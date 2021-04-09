@@ -583,7 +583,7 @@ input[type="submit"]:hover {
 /*End footer*/
 
 /*Start media queries*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   body {
     background: rgb(34, 34, 34);
     background-size: cover;
@@ -617,6 +617,11 @@ input[type="submit"]:hover {
     font-size: 3rem;
   }
 
+  .project-detail-heading h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
   .about-details .nav-list {
     flex-direction: initial;
   }
@@ -646,10 +651,26 @@ input[type="submit"]:hover {
     left: -5.9 rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 520px) {
   .menu-toggler {
     top: 2rem;
     right: 2rem;
+  }
+
+  .project-detail-heading h1 {
+    margin-left: 2rem;
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+  .project-detail-heading-analysis h1 {
+    font-size: 2rem;
+  }
+
+  .project-description h6 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-left: 2rem;
   }
 
   .landing-text h1 {
