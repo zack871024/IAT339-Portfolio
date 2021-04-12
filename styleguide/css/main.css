@@ -172,19 +172,20 @@ main img {
 }
 
 .color-1 {
-  background-color: #ff4949;
+  background-color: #ff9f0e;
 }
 
 .color-2 {
-  background-color: #fed766;
+  background-color: #373746;
 }
 
 .color-3 {
-  background-color: #086788;
+  background-color: #222222;
 }
 
 .color-4 {
-  background-color: #ccdbdc;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .color-5 {
@@ -457,11 +458,11 @@ body h5 {
 }
 
 .button-warning {
-  background-color: #fed766;
+  background-color: #ff9f0e;
 }
 
 .button-confirm {
-  background-color: #086788;
+  background-color: #ff9f0e;
 }
 
 .button-danger {
