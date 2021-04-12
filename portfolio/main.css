@@ -659,27 +659,15 @@ input[type="submit"]:hover {
     right: 2rem;
   }
 
-  /* .project-detail-heading h1 {
-    margin-left: 2rem;
-    font-size: 1rem;
-    margin-bottom: 0rem;
-    margin-top: 0rem;
-  } */
-  /* .project-detail-heading-analysis h1 {
-    font-size: 2rem;
-  } */
-
-  /* .project-description h6 {
-    font-size: 1rem;
-    font-weight: 300;
-    margin-left: 2rem;
-  } */
-
-  .project-description .project-detail-heading {
+  .project-description {
     flex-direction: column;
   }
 
   .slideshow-container {
+    flex-direction: column;
+  }
+
+  .container {
     flex-direction: column;
   }
 
