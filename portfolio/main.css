@@ -237,7 +237,7 @@ li {
   font-weight: 300;
 }
 
-.project-detail .container {
+.project-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -255,6 +255,8 @@ li {
 
 .project-detail-heading {
   text-align: left;
+  display: flex;
+  flex: 1;
   text-transform: uppercase;
   line-height: 0;
   margin-bottom: 6rem;
@@ -263,38 +265,37 @@ li {
 .project-detail-heading-analysis h1 {
   text-align: left;
   text-transform: uppercase;
+  display: flex;
+  flex: 1;
   line-height: 0;
   margin-bottom: 1rem;
   font-size: 4rem;
 }
 
-.project-detail-heading h1 {
-  font-size: 4rem;
-  opacity: 0.5;
-}
-
-.project-detail-heading h6 {
-  font-size: 2rem;
-  font-weight: 300;
-}
-
 .profile-img {
   flex: 1;
-  margin-right: 5rem;
-}
-
-.project-detail-details {
-  flex: 1;
+  width: 50rem;
 }
 
 .project-description {
   flex: 1;
+  display: inline-block;
+}
+
+.project-description-title {
+  flex: 1;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 300;
 }
 
 .project-description h1 {
   font-size: 3rem;
   font-weight: 300;
   margin: 1rem 0;
+  opacity: 0.5;
+  text-transform: uppercase;
 }
 
 .project-description h6 {
@@ -304,8 +305,9 @@ li {
 
 .project-reflection-heading h1 {
   font-size: 4rem;
-  opacity: 0.5;
   margin-top: 5rem;
+  opacity: 0.5;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -657,20 +659,28 @@ input[type="submit"]:hover {
     right: 2rem;
   }
 
-  .project-detail-heading h1 {
+  /* .project-detail-heading h1 {
     margin-left: 2rem;
     font-size: 1rem;
     margin-bottom: 0rem;
     margin-top: 0rem;
-  }
-  .project-detail-heading-analysis h1 {
+  } */
+  /* .project-detail-heading-analysis h1 {
     font-size: 2rem;
-  }
+  } */
 
-  .project-description h6 {
+  /* .project-description h6 {
     font-size: 1rem;
     font-weight: 300;
     margin-left: 2rem;
+  } */
+
+  .project-description .project-detail-heading {
+    flex-direction: column;
+  }
+
+  .slideshow-container {
+    flex-direction: column;
   }
 
   .landing-text h1 {
