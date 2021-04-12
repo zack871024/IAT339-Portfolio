@@ -659,12 +659,20 @@ input[type="submit"]:hover {
     right: 2rem;
   }
 
-  .project-description {
+  .slideshow-container {
     flex-direction: column;
   }
 
-  .slideshow-container {
+  .project-item {
     flex-direction: column;
+  }
+
+  .portfolio-img {
+    margin: 0 0 2rem 0;
+  }
+
+  .project-description {
+    margin: 0;
   }
 
   .container {
