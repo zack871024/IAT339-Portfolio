@@ -761,3 +761,39 @@ label {
     opacity: 1;
   }
 }
+
+.contactform {
+  background-color: rgb(34, 34, 34);
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1.5rem;
+}
+
+input,
+select,
+textarea {
+  width: 50%;
+  border: none;
+  border: none;
+}
+
+input[type="submit"] {
+  width: initial;
+  background-color: #ff9f0e;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 650ms;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff9f0e;
+  color: #221e3f;
+}

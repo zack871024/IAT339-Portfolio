@@ -19,6 +19,13 @@
     />
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/media.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="scripts.js"></script>
     <ul class="head-list">
@@ -104,6 +111,15 @@
               </p>
               <img class="image-flexbox-container-md" src="img/p01layout.png" alt="p1color" width="1000" height="1000"/>
             </li>
+            <h3>
+              Project Reflection 
+            </h3>
+            <p>
+              During this project, I learned the basics of magazine design with tools like Adobe Indesign and Photoshop. From image selection to font selection, every step is important and would affect the outcome of the overall design.
+              Learning how different color combination and font choices would change the mood of the magazine made me more careful in the future when different design requires specific tone. 
+              I also gained lots of experience with Indesign and Photoshop during this project.
+              Reflecting on one thing that I would change about this magazine is the font choice, I would have done more research and select other fonts that are mroe unique and suits the mood of this particular magazine.
+            </p>
           </ul>
         </section>
         <h2>Movie Poster Project Analysis #2</h2>
@@ -153,6 +169,14 @@
                 We also added some thin and thick line near the wheel of the taxi to create a feeling of movement.
               </p>
               <img class="image-flexbox-container-md" src="img/p02layout.png" alt="p1color" width="1000" height="1000"/>
+              <h3>
+                Project Reflection 
+              </h3>
+              <p>
+                During this project, my partner and I sometimes has some disagreement. We both learned to listen and communicate our idea to each other then select which one suits the project better.
+                Something that I would change about this movie poster is to seperate the font weight and the font family of the headings and the subheadings. 
+                Right now there isn't enough difference between them so words blend together, the result is a bland poster.
+              </p>
             </li>
           </ul>
         </section>
@@ -237,6 +261,32 @@
               &lt;/ol&gt;
             </code>
           </div>
+          <section class="element">
+            <h3>Icons</h3>
+  
+            <div class="number-list">
+              <ol>
+                <i class="fas fa-camera"></i>
+                <i class="fas fa-pencil-ruler"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fas fa-cubes"></i>
+              </ol>
+  
+              <code class="flexitem flex-item-4">
+                &lt;i class="fas fa-camera"&gt;&lt;/i&gt;
+              </br>
+                &lt;i class="fas fa-pencil-ruler"&gt;&lt;/i&gt;
+              </br>
+                &lt;i class="fab fa-instagram"&gt;&lt;/i&gt;
+              </br>
+              &lt;i class="fab fa-facebook"&gt;&lt;/i&gt;
+              </br>
+              &lt;i class="fab fa-cubes"&gt;&lt;/i&gt;
+          </br>
+              </code>
+            </div>
+        
         </section>
 
         <!-- INTERACTIVE ELEMENTS SECTION // -->
@@ -299,14 +349,75 @@
         <section id="combined_elements">
           <h2>Combined Elements</h2>
 
-          <section class="element" id="text-link">
-              <h3>In-text link</h3>
-
-              <div class="text-link">
-                  <div>Click <a href="#text-link">here</a> for more information.</div>
+          <section class="element" id="contactform">
+              <h3>Contact Form</h3>
+              <div class="contactform">
+                <form action="" data-aos="fade-up" data-aos-delay="300">
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name..."
+                    required
+                  />
                   <br>
-
-                  <code>Click &lt;a href = "#"&gt;here&lt;/a&gt;for more information.</code>
+                  <label for="email">Email:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your email..."
+                    required
+                  />
+                  <br>
+                  <label for="subject">Subject:</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Enter your subject..."
+                    required
+                  />
+                  <br>
+                  <label for="message">Message:</label>
+                  <textarea name="message" id="message" cols="10" rows="10"></textarea>
+                  <br>
+                  <br>
+                  <input type="submit" value="Submit" />
+                </form>
+                <br>
+                  <code>
+                    &lt;form action="" data-aos="fade-up" data-aos-delay="300"&gt;
+                    &lt;label for="name"&gt;Name:&lt;/label&gt;
+                    &lt;input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your name..."
+                      required
+                    /&gt;
+                    &lt;label for="email"&gt;Email:&lt;/label&gt;
+                    &lt;input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Enter your email..."
+                      required
+                    /&gt;
+                    &lt;label for="subject"&gt;Subject:&lt;/label&gt;
+                    &lt;input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="Enter your subject..."
+                      required
+                    /&gt;
+                    &lt;label for="message"&gt;Message:&lt;/label&gt;
+                    &lt;textarea name="message" id="message" cols="10" rows="10"&gt;&lt;/textarea&gt;
+                    &lt;input type="submit" value="Submit" /&gt;
+                    &lt;/form&gt;
+                </code>
               </div>
           </section>
 
