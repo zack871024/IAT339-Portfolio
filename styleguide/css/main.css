@@ -144,7 +144,7 @@ main {
 code {
   background-color: grey;
   padding: 0.5rem;
-  display: block;
+  display: flex;
 }
 
 main img {
@@ -370,6 +370,7 @@ body h5 {
   padding-left: 2rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+  padding-right: 2rem;
 }
 
 .text-link a {
@@ -422,7 +423,7 @@ body h5 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 2px 2px;
   cursor: pointer;
   margin-bottom: 2rem;
   transition-duration: 0.4s;
@@ -598,29 +599,6 @@ label {
   width: 50%;
 }
 
-.cart-flexbox-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  border-bottom: 1.5px solid black;
-  margin-top: 2rem;
-  padding-bottom: 1rem;
-}
-
-.cart-flexbox-container-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: auto;
-}
-
-.cart-flexbox-item-4 {
-  align-self: center;
-  margin-top: 1rem;
-}
-
 /*
 POTENTIAL IMAGERIES---------------------
 */
@@ -650,98 +628,6 @@ POTENTIAL IMAGERIES---------------------
   max-width: 100%;
 }
 
-/* TEMPLATE EXTRAS */
-
-.product-listing-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.product-listing-container-sm {
-  display: flex;
-  margin-top: 2rem;
-  margin: 3rem;
-  flex-direction: column;
-  text-align: center;
-}
-
-.product-listing-container-sm a {
-  text-decoration: none;
-  color: black;
-}
-
-.product-listing-container-sm a:checked {
-  text-decoration: none;
-  color: rgb(73, 73, 73);
-}
-
-.product-listing-container-sm h4:hover {
-  transform: scale(1.2);
-}
-
-.product-listing-container-sm h3 {
-  font-size: 20px;
-}
-
-.product-listing-container-sm h3:hover {
-  color: #c3996b;
-}
-
-.product-listing-container-sm h4 {
-  margin-top: auto;
-}
-
-.product-filter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.product-filter input,
-label {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.product-filter-title {
-  border-bottom: 1px solid rgb(65, 65, 65);
-}
-
-.page-title {
-  border-bottom: 2px solid black;
-}
-
-.nav-brand {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.logo {
-  margin-left: 10%;
-}
-
-.shopping-cart {
-  margin-right: 15%;
-}
-
-.form-popup {
-  display: none;
-  position: fixed;
-  margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-animation: fadeIn 0.2s;
-  animation: fadeIn 0.2s;
-}
-
 /* Add animation (fade in the popup) */
 
 @-webkit-keyframes fadeIn {
@@ -762,38 +648,199 @@ label {
   }
 }
 
-.contactform {
-  background-color: rgb(34, 34, 34);
+.mySlides {
+  display: none;
 }
 
-form {
-  width: 50%;
-  margin: 0 auto;
+img {
+  vertical-align: middle;
 }
 
-form label {
-  font-size: 1.5rem;
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-input,
-select,
-textarea {
-  width: 50%;
-  border: none;
-  border: none;
-}
-
-input[type="submit"] {
-  width: initial;
-  background-color: #ff9f0e;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 0.8rem;
+/* Next & previous buttons */
+.prev,
+.next {
   cursor: pointer;
-  transition: background-color 650ms;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-input[type="submit"]:hover {
-  background-color: #ff9f0e;
-  color: #221e3f;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+.project-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.project-text h1 {
+  font-size: 8rem;
+  font-family: "Montserrat", sans-serif;
+  background: #ff9f0e;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+  user-select: none;
+}
+
+.project-text h6 {
+  padding-top: 10rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.project-detail-heading-cover {
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+}
+
+.project-detail-heading {
+  text-align: left;
+  display: flex;
+  flex: 1;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 6rem;
+}
+
+.project-detail-heading-analysis h1 {
+  text-align: left;
+  text-transform: uppercase;
+  display: flex;
+  flex: 1;
+  line-height: 0;
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+.profile-img {
+  flex: 1;
+  width: 50rem;
+}
+
+.project-description {
+  flex: 1;
+  display: inline-block;
+}
+
+.project-description-title {
+  flex: 1;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.project-description h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1rem 0;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.project-description h6 {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.project-reflection-heading h1 {
+  font-size: 4rem;
+  margin-top: 5rem;
+  opacity: 0.5;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.project-reflection h6 {
+  font-size: 1.7rem;
+  font-weight: 300;
 }
