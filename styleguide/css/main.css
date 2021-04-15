@@ -230,7 +230,7 @@ main img {
 .typography {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: minmanx(150px, auto);
+  grid-auto-rows: minmax(150px, auto);
   grid-gap: 20px;
 }
 
@@ -393,15 +393,6 @@ body h5 {
 .example-nav code {
   margin-top: 1rem;
   align-self: flex-end;
-}
-
-.example-nav a {
-  margin-top: 1rem;
-  padding: 16px;
-  text-decoration: none;
-  font-size: 1rem;
-  color: nav;
-  display: block;
 }
 
 .example-nav a:hover:not(.active) {
@@ -618,7 +609,7 @@ POTENTIAL IMAGERIES---------------------
 }
 
 .image-flexbox-container-md {
-  display: flexbox;
+  display: flex;
   flex-direction: row;
   width: 200%;
   height: 200%;
