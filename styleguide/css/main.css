@@ -61,7 +61,7 @@ nav a:focus {
   justify-content: center;
   overflow: auto;
   margin-top: 5em;
-  background-color: #086788;
+  background-color: #ff9f0e;
 }
 
 .topnav a {
@@ -105,7 +105,7 @@ nav a:focus {
 
 .topnav a:hover,
 .dropdown:hover .dropbtn {
-  background-color: #ccdbdc;
+  background-color: #494b4b;
 }
 
 .dropdown-content {
@@ -128,7 +128,7 @@ nav a:focus {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #494b4b;
 }
 
 .dropdown:hover .dropdown-content {
@@ -834,4 +834,53 @@ img {
 .project-reflection h6 {
   font-size: 1.7rem;
   font-weight: 300;
+}
+
+/*timeline*/
+.timeline ul {
+  border-left: 4px solid #ff9f0e;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  position: relative;
+  padding: 5rem;
+  list-style: none;
+  text-align: left;
+  width: 70%;
+}
+
+.timeline h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 1rem;
+  opacity: 0.3;
+}
+
+.timeline .date {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.timeline .date:nth-last-of-type() {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline .date::before,
+.timeline .date::after {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline .date::before {
+  content: attr(date-date);
+  left: -21rem;
+  text-align: right;
+  min-width: 12rem;
+  font-size: 1.5rem;
 }
