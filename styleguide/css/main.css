@@ -19,7 +19,7 @@ body {
   margin-left: 0;
   padding: 0;
   margin-bottom: auto;
-  border-bottom: 3px solid #c3996b;
+  border-bottom: 3px solid #ff9f0e;
   margin-right: 1rem;
 }
 
@@ -150,7 +150,7 @@ code {
 main img {
   width: 100%;
   height: auto;
-  max-width: 20vw;
+  max-width: 40vw;
 }
 
 /* 
@@ -883,4 +883,16 @@ img {
   text-align: right;
   min-width: 12rem;
   font-size: 1.5rem;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(41, 41, 41);
+  padding: 1rem 0;
+  position: relative;
+}
+
+.copyright p {
+  font-size: 1.4rem;
 }

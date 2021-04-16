@@ -62,3 +62,9 @@ function showSlides(n, no) {
   }
   x[slideIndex[no] - 1].style.display = "block";
 }
+
+// When the user clicks on <div>, open the popup
+function myFunctionClick() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}

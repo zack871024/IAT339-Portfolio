@@ -1,0 +1,52 @@
+html,
+body {
+  background-color: rgb(34, 34, 34);
+  max-width: 100%;
+}
+
+body {
+  margin-right: 0rem;
+  display: grid;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+
+body h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+}
+
+body h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+}
+
+body h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+/* Footer Links */
+
+.footer-link {
+  max-width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.footer-link:hover {
+  background-color: rgb(34, 34, 34);
+}
